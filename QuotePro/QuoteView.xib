@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuoteView" customModule="QuotePro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3VY-4e-VZ4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdz-w6-7r4">
+                    <rect key="frame" x="144.5" y="313" width="86" height="41"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBF-HP-VDA">
+                    <rect key="frame" x="161" y="362" width="53" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sdz-w6-7r4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1k0-mU-5bx"/>
+                <constraint firstItem="Sdz-w6-7r4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GBv-6z-pk8"/>
+                <constraint firstItem="3VY-4e-VZ4" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="MsY-FS-3uq"/>
+                <constraint firstItem="3VY-4e-VZ4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T8F-KO-2nV"/>
+                <constraint firstItem="WBF-HP-VDA" firstAttribute="top" secondItem="Sdz-w6-7r4" secondAttribute="bottom" constant="8" id="Tnf-dh-E18"/>
+                <constraint firstItem="WBF-HP-VDA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="161" id="Ufs-Y0-ziY"/>
+                <constraint firstItem="3VY-4e-VZ4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YcH-di-zxC"/>
+                <constraint firstItem="3VY-4e-VZ4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bBm-aw-YdQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WBF-HP-VDA" secondAttribute="trailing" constant="161" id="d1Y-hw-Snh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="authorLabel" destination="WBF-HP-VDA" id="D05-Ue-BEc"/>
+                <outlet property="quoteLabel" destination="Sdz-w6-7r4" id="ruO-c8-qRl"/>
+                <outlet property="randomImageView" destination="3VY-4e-VZ4" id="JPB-La-F2M"/>
+            </connections>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>
